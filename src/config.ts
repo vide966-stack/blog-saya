@@ -8,11 +8,11 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Blog Saya",
-	subtitle: "Catatan dan tulisan pribadi",
-	lang: "id", // Bahasa Indonesia
+	title: "TEKB",
+	subtitle: "Mencari Bukti di Balik Sinyal Trading",
+	lang: "id",
 	themeColor: {
-		hue: 250, // 0 = merah, 200 = teal, 250 = cyan, 345 = pink
+		hue: 250,
 		fixed: false,
 	},
 	banner: {
@@ -35,11 +35,15 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
-		LinkPreset.Archive,
+		{
+			name: "Daftar Isi",
+			url: "/daftar-isi/",
+			external: false,
+		},
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/vide966-stack/blog-saya",
+			url: "https://github.com/vide966-stack",
 			external: true,
 		},
 	],
@@ -47,8 +51,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/demo-avatar.png",
-	name: "vide966-stack",
-	bio: "Menulis catatan, ide, dan pengalaman sehari-hari.",
+	name: "Victor Hutajulu",
+	bio: "Penulis TEKB — Panduan Orang Awam Memahami Penelitian Trading Berbasis Data, Pembanding, dan Pengujian yang Jujur.",
 	links: [
 		{
 			name: "GitHub",
