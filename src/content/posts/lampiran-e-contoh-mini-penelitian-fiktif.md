@@ -851,9 +851,61 @@ MFE hanya menunjukkan bahwa harga pernah bergerak sejauh itu. Trader mungkin tel
 
 Tidak tepat:
 
-> "Kami menemukan kandidat terbaik
+> "Kami menemukan kandidat terbaik."
 
-E.19 Pelajaran Utama dari Contoh
+Jika banyak kandidat telah diuji, seluruh proses pencarian harus dicatat. Kandidat yang gagal tidak boleh dihapus dari provenance hanya karena kandidat lain dipilih.
+
+### 10. Tidak boleh mengubah OOS menjadi tempat tuning
+
+Tidak tepat:
+
+> "Setelah melihat OOS kurang bagus, kami mengganti SL dan TP sampai hasilnya membaik, lalu tetap menyebut periode tersebut sebagai OOS murni."
+
+Perubahan tersebut mencemari OOS. Jika aturan diubah, penelitian harus diberi versi baru dan status OOS sebelumnya harus ditandai sesuai aturan.
+
+## E.18 Ringkasan Alur Penelitian
+
+Contoh mini ini dapat diringkas sebagai berikut:
+
+```text
+Pertanyaan penelitian
+        ↓
+Definisi event RV ≥ 3
+        ↓
+Deteksi event B1
+        ↓
+Penentuan entry pada open berikutnya
+        ↓
+Pemilihan B0 tanpa melihat outcome
+        ↓
+Pengukuran return, MAE, dan MFE
+        ↓
+Normalisasi menggunakan ATR
+        ↓
+Pengujian kandidat SL/TP
+        ↓
+Evaluation Engine
+        ↓
+Distribusi hasil
+        ↓
+Bootstrap
+        ↓
+Multiple Testing
+        ↓
+IS Selection
+        ↓
+Freeze kandidat C2
+        ↓
+Evaluasi pada OOS
+        ↓
+OOS_VALIDATED atau OOS_REJECTED
+        ↓
+Kesimpulan yang dibatasi oleh bukti
+...
+
+## E.19 Pelajaran Utama dari Contoh
+
+
 Contoh ini menunjukkan beberapa hal penting.
 
 Pertama
@@ -886,7 +938,7 @@ OOS memberikan pengujian tambahan terhadap generalisasi, tetapi tidak menjamin k
 Kesepuluh
 Kesimpulan penelitian harus lebih sempit daripada keinginan peneliti.
 
-E.20 Penutup
+## E.20 Penutup
 Mini penelitian fiktif ini memperlihatkan bahwa penelitian trading yang jujur tidak berhenti pada kalimat:
 
 "Setelah volume tinggi, harga sering naik."
@@ -924,10 +976,10 @@ Apakah hasilnya bertahan pada OOS?
 Sejauh mana kesimpulan boleh dibuat?
 
 Dengan alur tersebut, TEKB tidak mengubah pola historis menjadi kepastian. TEKB mengubah pola menjadi hipotesis, hipotesis menjadi pengukuran, pengukuran menjadi distribusi, distribusi menjadi pengujian, dan pengujian menjadi kesimpulan yang dibatasi oleh bukti.
-
+```
 Tujuan penelitian bukan membuat klaim sebesar mungkin, melainkan membuat klaim yang dapat dipertanggungjawabkan oleh data dan metode.
 
 <div align="center">
 ← Lampiran D | Beranda | Daftar Isi | Lampiran F →
 
-</div> ```
+</div>
